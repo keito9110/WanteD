@@ -1,4 +1,4 @@
-package com.example.wanted;
+package com.example.wanted.api;
 
 import java.util.Date;
 

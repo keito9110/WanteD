@@ -1,10 +1,12 @@
-package com.example.wanted;
+package com.example.wanted.api;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.wanted.R;
 
 public class MainActivity2 extends AppCompatActivity {
 
@@ -14,7 +16,7 @@ public class MainActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
     }
     public void befor(View v){
-        Intent intent = new Intent(com.example.wanted.MainActivity2.this, CommEnterRead.class);
+        Intent intent = new Intent(MainActivity2.this, CommEnterRead.class);
         startActivity(intent);
     }
 }
