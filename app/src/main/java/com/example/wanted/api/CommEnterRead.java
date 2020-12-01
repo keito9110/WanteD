@@ -1,4 +1,4 @@
-package com.example.wanted;
+package com.example.wanted.api;
 
 
 import android.content.ContentValues;
@@ -13,6 +13,8 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.wanted.R;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -58,7 +60,7 @@ public class CommEnterRead extends AppCompatActivity {
             public void onClick(View v) {
                 String str = "1801203@s.asojuku.ac.jp";
                 try {
-                    new com.example.testapi_sotuken.Http(com.example.testapi_sotuken.CommEnterRead.this).execute(new URL("http://ec2-52-91-210-202.compute-1.amazonaws.com/Mail2/mail?mail="+str));
+                    new com.example.wanted.api.Http(com.example.wanted.api.CommEnterRead.this).execute(new URL("http://ec2-52-91-210-202.compute-1.amazonaws.com/Mail2/mail?mail="+str));
                 } catch (MalformedURLException e) {
                     e.printStackTrace();
                 }

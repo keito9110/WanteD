@@ -6,6 +6,8 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.wanted.api.CommEnterRead;
+
 public class MainActivity2 extends AppCompatActivity {
 
     @Override
