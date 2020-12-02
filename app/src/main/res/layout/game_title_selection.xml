@@ -36,32 +36,32 @@
             android:layout_marginTop="400dp"
             android:layout_marginEnd="32dp"
             android:background="#A5A5A5"
-            android:text="戻る"
             android:onClick="back_genre"
+            android:text="戻る"
             android:textColor="#FFF7F7"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/button3"
-            app:layout_constraintHorizontal_bias="0.72"
+            app:layout_constraintHorizontal_bias="0.879"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.851" />
+            app:layout_constraintVertical_bias="0.52" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="119dp"
             android:layout_height="45dp"
             android:background="#525252"
+            android:onClick="complete"
             android:text="次へ"
             android:textColor="#FFF7F7"
             android:textSize="18sp"
-            android:onClick="complete"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.609"
+            app:layout_constraintHorizontal_bias="0.616"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.943" />
+            app:layout_constraintVertical_bias="0.803" />
 
         <TextView
             android:id="@+id/textView18"
@@ -96,7 +96,7 @@
             app:layout_constraintHorizontal_bias="0.925"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.942"
+            app:layout_constraintVertical_bias="0.8"
             app:srcCompat="@android:drawable/ic_lock_idle_alarm" />
 
         <ToggleButton
@@ -217,11 +217,12 @@
             android:layout_width="226dp"
             android:layout_height="39dp"
             android:layout_marginStart="118dp"
-            android:layout_marginTop="83dp"
+            android:layout_marginTop="36dp"
             android:layout_marginEnd="235dp"
             android:text="随時追加予定"
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.416"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/toggleButton10" />
 

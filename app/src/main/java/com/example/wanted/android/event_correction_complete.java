@@ -20,6 +20,7 @@ public class event_correction_complete extends AppCompatActivity {
     public void syousai(View v){
         Intent intent = new Intent(com.example.wanted.android.event_correction_complete.this,com.example.wanted.api.CommEnterRead.class );
         startActivity(intent);
+
     }
     public void comm(View v){
         Intent intent = new Intent(com.example.wanted.android.event_correction_complete.this, com.example.wanted.api.CommEnterRead.class);

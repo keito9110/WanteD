@@ -10,8 +10,10 @@
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <ToggleButton
             android:id="@+id/toggleButton12"
@@ -71,8 +73,8 @@
 
         <RelativeLayout
             android:id="@+id/relativeLayout"
-            android:layout_width="410dp"
-            android:layout_height="162dp"
+            android:layout_width="422dp"
+            android:layout_height="133dp"
             android:layout_marginEnd="1dp"
             android:animationCache="false"
             android:background="#BED4DF"
@@ -91,32 +93,32 @@
             android:layout_marginTop="400dp"
             android:layout_marginEnd="32dp"
             android:background="#A5A5A5"
+            android:onClick="Back"
             android:text="戻る"
             android:textColor="#FFF7F7"
             android:textSize="18sp"
-            android:onClick="Back"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/button3"
-            app:layout_constraintHorizontal_bias="0.72"
+            app:layout_constraintHorizontal_bias="0.827"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.851" />
+            app:layout_constraintVertical_bias="0.71" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="119dp"
             android:layout_height="45dp"
             android:background="#525252"
-            android:text="次へ"
             android:onClick="Next"
+            android:text="次へ"
             android:textColor="#FFF7F7"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.609"
+            app:layout_constraintHorizontal_bias="0.602"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.943" />
+            app:layout_constraintVertical_bias="0.883" />
 
         <TextView
             android:id="@+id/textView18"
@@ -148,10 +150,10 @@
             android:layout_height="54dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.925"
+            app:layout_constraintHorizontal_bias="0.906"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.942"
+            app:layout_constraintVertical_bias="0.895"
             app:srcCompat="@android:drawable/ic_lock_idle_alarm" />
 
         <ToggleButton
