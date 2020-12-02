@@ -70,6 +70,7 @@
         android:layout_marginEnd="32dp"
         android:background="#525252"
         android:text="プロフィールの編集"
+        android:onClick="profile"
         android:textColor="#FFF7F7"
         android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="parent"

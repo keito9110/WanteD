@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -13,6 +12,62 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
+        <ToggleButton
+            android:id="@+id/toggleButton12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="62dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="23dp"
+            android:text="アクション"
+            android:textOff="アクション"
+            android:textOn="アクション"
+            app:layout_constraintEnd_toStartOf="@+id/toggleButton13"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toggleButton10" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="62dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="28dp"
+            android:text="脱出"
+            android:textOff="脱出"
+            android:textOn="脱出"
+            app:layout_constraintEnd_toStartOf="@+id/toggleButton15"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toggleButton12" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton15"
+            android:layout_width="187dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="46dp"
+            android:text="シミュレーター"
+            android:textOff="シミュレーター"
+            android:textOn="シミュレーター"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/toggleButton14"
+            app:layout_constraintTop_toBottomOf="@+id/toggleButton13" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton13"
+            android:layout_width="187dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="46dp"
+            android:text="アドベンチャー"
+            android:textOff="アドベンチャー"
+            android:textOn="アドベンチャ"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/toggleButton12"
+            app:layout_constraintTop_toBottomOf="@+id/toggleButton11" />
 
         <RelativeLayout
             android:id="@+id/relativeLayout"
@@ -39,6 +94,7 @@
             android:text="戻る"
             android:textColor="#FFF7F7"
             android:textSize="18sp"
+            android:onClick="Back"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/button3"
             app:layout_constraintHorizontal_bias="0.72"
@@ -52,6 +108,7 @@
             android:layout_height="45dp"
             android:background="#525252"
             android:text="次へ"
+            android:onClick="Next"
             android:textColor="#FFF7F7"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -97,13 +154,118 @@
             app:layout_constraintVertical_bias="0.942"
             app:srcCompat="@android:drawable/ic_lock_idle_alarm" />
 
-        <Button
-            android:id="@+id/button6"
+        <ToggleButton
+            android:id="@+id/toggleButton2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1"
-            tools:layout_editor_absoluteX="39dp"
-            tools:layout_editor_absoluteY="199dp" />
+            android:layout_marginStart="62dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="28dp"
+            android:text="FPS"
+            android:textOff="FPS"
+            android:textOn="FPS"
+            app:layout_constraintEnd_toStartOf="@+id/toggleButton7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginEnd="23dp"
+            android:text="RPG"
+            android:textOff="RPG"
+            android:textOn="RPG"
+            app:layout_constraintEnd_toStartOf="@+id/toggleButton9"
+            app:layout_constraintStart_toEndOf="@+id/toggleButton8"
+            app:layout_constraintTop_toBottomOf="@+id/toggleButton7" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="19dp"
+            android:text="TCG"
+            android:textOff="TCG"
+            android:textOn="TCG"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/toggleButton5"
+            app:layout_constraintTop_toBottomOf="@+id/toggleButton6" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="19dp"
+            android:text="PVP"
+            android:textOff="PVP"
+            android:textOn="PVP"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/toggleButton7"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="23dp"
+            android:text="TPS"
+            android:textOff="TPS"
+            android:textOn="TPS"
+            app:layout_constraintEnd_toStartOf="@+id/toggleButton6"
+            app:layout_constraintStart_toEndOf="@+id/toggleButton2"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="62dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="28dp"
+            android:text="PVE"
+            android:textOff="PVE"
+            android:textOn="PVE"
+            app:layout_constraintEnd_toStartOf="@+id/toggleButton5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toggleButton2" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="62dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="28dp"
+            android:text="ホラー"
+            android:textOff="ホラー"
+            android:textOn="ホラー"
+            app:layout_constraintEnd_toStartOf="@+id/toggleButton11"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toggleButton8" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton11"
+            android:layout_width="193dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="41dp"
+            android:layout_marginEnd="40dp"
+            android:text="バトルロワイヤル"
+            android:textOff="バトルロワイヤル"
+            android:textOn="FPSバトルロワイヤ"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/toggleButton10"
+            app:layout_constraintTop_toBottomOf="@+id/toggleButton5" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

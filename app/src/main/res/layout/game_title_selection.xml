@@ -15,47 +15,37 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <RelativeLayout
-            android:id="@+id/relativeLayout2"
+            android:id="@+id/relativeLayout"
             android:layout_width="410dp"
             android:layout_height="162dp"
+            android:layout_marginEnd="1dp"
             android:animationCache="false"
             android:background="#BED4DF"
             android:backgroundTint="#8BBED4DF"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <TextView
-                android:id="@+id/textView18"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="72dp"
-                android:layout_marginTop="59dp"
-                android:layout_marginEnd="100dp"
-                android:text="あなたがはまっている"
-                android:textColor="#858484"
-                android:textSize="24sp" />
         </RelativeLayout>
 
         <Button
             android:id="@+id/button2"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="54dp"
-            android:layout_marginTop="647dp"
-            android:layout_marginEnd="237dp"
-            android:layout_marginBottom="43dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="400dp"
+            android:layout_marginEnd="32dp"
             android:background="#A5A5A5"
             android:text="戻る"
+            android:onClick="back_genre"
             android:textColor="#FFF7F7"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button3"
+            app:layout_constraintHorizontal_bias="0.72"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.851" />
 
         <Button
             android:id="@+id/button3"
@@ -65,9 +55,25 @@
             android:text="次へ"
             android:textColor="#FFF7F7"
             android:textSize="18sp"
+            android:onClick="complete"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.609"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:layout_editor_absoluteX="206dp" />
+            app:layout_constraintVertical_bias="0.943" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="54dp"
+            android:text="あなたがはまっている"
+            android:textColor="#858484"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/relativeLayout"
+            app:layout_constraintTop_toTopOf="@+id/relativeLayout" />
 
         <TextView
             android:id="@+id/textView18"
@@ -79,27 +85,145 @@
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/relativeLayout2" />
+            app:layout_constraintTop_toTopOf="@+id/relativeLayout" />
 
         <ImageView
             android:id="@+id/imageView10"
             android:layout_width="47dp"
             android:layout_height="54dp"
-            app:srcCompat="@android:drawable/ic_lock_idle_alarm"
-            tools:layout_editor_absoluteX="348dp"
-            tools:layout_editor_absoluteY="638dp" />
-
-        <Button
-            android:id="@+id/button6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.167"
+            app:layout_constraintHorizontal_bias="0.925"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/relativeLayout2"
-            app:layout_constraintVertical_bias="0.08" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.942"
+            app:srcCompat="@android:drawable/ic_lock_idle_alarm" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="62dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="28dp"
+            android:text="APEX"
+            android:textOff="APEX"
+            android:textOn="APEX"
+            app:layout_constraintEnd_toStartOf="@+id/toggleButton7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginEnd="23dp"
+            android:text="LOL"
+            android:textOff="LOL"
+            android:textOn="LOL"
+            app:layout_constraintEnd_toStartOf="@+id/toggleButton9"
+            app:layout_constraintStart_toEndOf="@+id/toggleButton8"
+            app:layout_constraintTop_toBottomOf="@+id/toggleButton7" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="19dp"
+            android:text="スマブラ"
+            android:textOff="スマブラ"
+            android:textOn="スマブラ"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/toggleButton5"
+            app:layout_constraintTop_toBottomOf="@+id/toggleButton6" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="19dp"
+            android:text="VAROLANT"
+            android:textOff="VAROLANT"
+            android:textOn="VAROLANT"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/toggleButton7"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="23dp"
+            android:text="COD"
+            android:textOff="COD"
+            android:textOn="COD"
+            app:layout_constraintEnd_toStartOf="@+id/toggleButton6"
+            app:layout_constraintStart_toEndOf="@+id/toggleButton2"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="62dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="28dp"
+            android:text="ポケモン"
+            android:textOff="ポケモン"
+            android:textOn="ポケモン"
+            app:layout_constraintEnd_toStartOf="@+id/toggleButton5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toggleButton2" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="62dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="28dp"
+            android:text="ドラクエ"
+            android:textOff="ドラクエ"
+            android:textOn="ドラクエ"
+            app:layout_constraintEnd_toStartOf="@+id/toggleButton11"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toggleButton8" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton11"
+            android:layout_width="193dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="41dp"
+            android:layout_marginEnd="40dp"
+            android:text="ファイナルファンタジー"
+            android:textOff="ファイナルファンタジー"
+            android:textOn="ファイナルファンタジー"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/toggleButton10"
+            app:layout_constraintTop_toBottomOf="@+id/toggleButton5" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="226dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="118dp"
+            android:layout_marginTop="83dp"
+            android:layout_marginEnd="235dp"
+            android:text="随時追加予定"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toggleButton10" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

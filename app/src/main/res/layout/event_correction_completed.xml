@@ -15,6 +15,7 @@
         android:text="イベント詳細画面へ"
         android:textColor="#FFF7F7"
         android:textSize="18sp"
+        android:onClick="syousai"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView6" />
@@ -25,9 +26,10 @@
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
         android:background="#A5A5A5"
-        android:text="プロフィールへ戻る"
+        android:text="コミュニティへ"
         android:textColor="#FFF7F7"
         android:textSize="18sp"
+        android:onClick="comm"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button14" />

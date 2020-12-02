@@ -103,7 +103,7 @@ public class CreateUserDB extends SQLiteOpenHelper {
 
 
 
-    CreateUserDB(Context context) {
+    public CreateUserDB(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".android.login">
 
     <TextView
         android:id="@+id/textView2"
@@ -67,6 +67,7 @@
         android:background="#525252"
         android:text="ログイン"
         android:textColor="#FFF7F7"
+        android:onClick="login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.54"
@@ -111,6 +112,7 @@
         android:layout_width="263dp"
         android:layout_height="52dp"
         android:text="新規登録"
+        android:onClick="new_registration"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.545"
