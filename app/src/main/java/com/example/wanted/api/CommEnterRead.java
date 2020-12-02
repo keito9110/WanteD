@@ -60,9 +60,11 @@ public class CommEnterRead extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String str = "1801203@s.asojuku.ac.jp";
+                edit_text_key = findViewById(R.id.edit_text_key);
+                String str = "1801190@s.asojuku.ac.jp";
+
                 try {
-                    new com.example.wanted.api.Http(com.example.wanted.api.CommEnterRead.this).execute(new URL("http://ec2-52-91-210-202.compute-1.amazonaws.com/Mail2/mail?mail="+str));
+                    new com.example.wanted.api.Http(com.example.wanted.api.CommEnterRead.this).execute(new URL("http://ec2-52-91-210-202.compute-1.amazonaws.com/Mail2/mail2?mail="+str));
                 } catch (MalformedURLException e) {
                     e.printStackTrace();
                 }
@@ -178,3 +180,4 @@ public class CommEnterRead extends AppCompatActivity {
         deleteDatabase("User.db");
      }
 }
+//http://ec2-52-91-210-202.compute-1.amazonaws.com/Mail2/auth?token=20685d6c74ba93ba953c27c4cf4e71bb&id=1800001

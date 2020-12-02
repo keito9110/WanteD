@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item name="text_view" type="id" />
+    <item name="edit_text_value" type="id" />
+    <item name="edit_text_key" type="id" />
+    <item name="listArea" type="id" />
+    <item name="button6" type="id" />
 </resources>
