@@ -4,18 +4,20 @@ import android.app.Application;
 import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.widget.ListView;
 
 import com.example.wanted.api.CreateUserDB;
-import com.example.wanted.api.Test;
 
-public class user extends Application {
+public class User extends Application {
 
     private CreateUserDB helper;
 
     private String user_name;
     private String user_id;
     private String user_mail;
+    private String user_dept;
+    private String user_icon;
+    private String user_intro;
+    private String user_flag;
 
 
     @Override
@@ -42,7 +44,7 @@ public class user extends Application {
         cursor.moveToFirst();
 
         for (int i = 0; i < cursor.getCount(); i++) {
-            user user = new user();
+            User user = new User();
             user.setUser_name(cursor.getString(0));
             user.setUser_id(cursor.getString(1));
             user.setUser_mail(cursor.getString(2));
@@ -53,12 +55,12 @@ public class user extends Application {
     public void new_user(SQLiteDatabase db,ContentValues list){
         ContentValues values = new ContentValues();
 
-        values.put("user_name", (String) list.get("user_name"));
-        values.put("user_mail", (String) list.get("user_mail"));
-        values.put("user_department" , (String) list.get("user_department"));
-        values.put("user_icon" , (String)list.get("user_icon"));
-        values.put("user_introduction" , (String)list.get("user_introduction"));
-        values.put("user_flag" , (String)list.get("user_flag"));
+        values.put("user_name", getUser_name());
+        values.put("user_mail", getUser_mail());
+        values.put("user_department" , getUser_dept());
+        values.put("user_icon" , getUser_icon());
+        values.put("user_introduction" , getUser_intro());
+        values.put("user_flag" , getUser_flag());
 
         // values.put("title", title);
         // values.put("score", score);
@@ -89,5 +91,37 @@ public class user extends Application {
 
     public void setUser_id(String user_id) {
         this.user_id = user_id;
+    }
+
+    public String getUser_dept() {
+        return user_dept;
+    }
+
+    public void setUser_dept(String user_dept) {
+        this.user_dept = user_dept;
+    }
+
+    public String getUser_intro() {
+        return user_intro;
+    }
+
+    public void setUser_intro(String user_intro) {
+        this.user_intro = user_intro;
+    }
+
+    public String getUser_flag() {
+        return user_flag;
+    }
+
+    public void setUser_flag() {
+        this.user_flag = "0";
+    }
+
+    public String getUser_icon() {
+        return user_icon;
+    }
+
+    public void setUser_icon(String user_icon) {
+        this.user_icon = user_icon;
     }
 }

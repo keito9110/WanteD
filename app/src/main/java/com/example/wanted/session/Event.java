@@ -5,7 +5,7 @@ import android.widget.ArrayAdapter;
 
 import java.util.Date;
 
-public class event extends Application {
+public class Event extends Application {
 
     private String event_id;
     private String event_name;

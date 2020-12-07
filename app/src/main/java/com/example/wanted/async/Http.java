@@ -1,4 +1,4 @@
-package com.example.wanted.api;
+package com.example.wanted.async;
 
 import android.app.Activity;
 import android.os.AsyncTask;
