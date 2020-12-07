@@ -61,10 +61,10 @@ public class CommEnterRead extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 edit_text_key = findViewById(R.id.edit_text_key);
-                String str = "1801190@s.asojuku.ac.jp";
+                String str = edit_text_key.getText().toString();
 
                 try {
-                    new com.example.wanted.api.Http(com.example.wanted.api.CommEnterRead.this).execute(new URL("http://ec2-52-91-210-202.compute-1.amazonaws.com/Mail2/mail2?mail="+str));
+                    new com.example.wanted.api.JsonTest(com.example.wanted.api.CommEnterRead.this).execute(new URL("http://ec2-52-91-210-202.compute-1.amazonaws.com/Mail2/mail2?mail="+str));
                 } catch (MalformedURLException e) {
                     e.printStackTrace();
                 }
