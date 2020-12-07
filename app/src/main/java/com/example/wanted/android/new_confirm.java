@@ -29,7 +29,8 @@ public class new_confirm extends AppCompatActivity {
         user user = new user();
         String str = user.getUser_mail();
         try {
-            new com.example.wanted.api.Http(com.example.wanted.android.new_confirm.this).execute(new URL("http://ec2-52-91-210-202.compute-1.amazonaws.com/Mail2/mail2?mail="+str));
+            new com.example.wanted.api.Http(com.example.wanted.android.new_confirm.this)
+                    .execute(new URL("http://ec2-52-91-210-202.compute-1.amazonaws.com/Mail2/mail2?mail="+str));
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
