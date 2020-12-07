@@ -15,11 +15,11 @@ public class login extends AppCompatActivity {
         setContentView(R.layout.login);
     }
     public void login(View v){
-        Intent intent = new Intent(com.example.wanted.android.login.this,com.example.wanted.android.new_registration.class);
+        Intent intent = new Intent(login.this, AuthToken.class);
         startActivity(intent);
     }
     public void new_registration(View v){
-        Intent intent = new Intent(com.example.wanted.android.login.this,com.example.wanted.android.registration.class);
+        Intent intent = new Intent(login.this,registration.class);
         startActivity(intent);
     }
 }

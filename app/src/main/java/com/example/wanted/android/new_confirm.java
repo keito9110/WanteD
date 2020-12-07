@@ -5,11 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 
 import com.example.wanted.R;
-import com.example.wanted.session.user;
+import com.example.wanted.async.Http;
+import com.example.wanted.session.User;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -26,16 +25,16 @@ public class new_confirm extends AppCompatActivity {
     }
 
     public void new_registration(View v){
-        user user = new user();
+        User user = new User();
         String str = user.getUser_mail();
         try {
-            new com.example.wanted.api.Http(com.example.wanted.android.new_confirm.this)
+            new Http(new_confirm.this)
                     .execute(new URL("http://ec2-52-91-210-202.compute-1.amazonaws.com/Mail2/mail2?mail="+str));
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
 
-        Intent intent = new Intent(com.example.wanted.android.new_confirm.this,com.example.wanted.android.login.class);
+        Intent intent = new Intent(new_confirm.this,com.example.wanted.android.login.class);
         startActivity(intent);
     }
     public void back_registration(View v){
