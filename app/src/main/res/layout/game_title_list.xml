@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="404dp"
+        android:layout_height="172dp"
+        android:background="#BED4DF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="59dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="59dp"
+            android:text="ゲームタイトル一覧"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+
+    <ToggleButton
+        android:id="@+id/tbtnAPEX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:text="APEX"
+        android:textOff="APEX"
+        android:textOn="APEX"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2" />
+
+    <ToggleButton
+        android:id="@+id/tbtnLOL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="56dp"
+        android:text="LOL"
+        android:textOff="LOL"
+        android:textOn="LOL"
+        app:layout_constraintStart_toEndOf="@+id/tbtnPOKEMON"
+        app:layout_constraintTop_toBottomOf="@+id/tbtnCOD" />
+
+    <ToggleButton
+        android:id="@+id/tbtnSMASH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="56dp"
+        android:text="スマブラ"
+        android:textOff="スマブラ"
+        android:textOn="スマブラ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tbtnLOL"
+        app:layout_constraintTop_toBottomOf="@+id/tbtnVAROLANT" />
+
+    <ToggleButton
+        android:id="@+id/tbtnVAROLANT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="VAROLANT"
+        android:textOff="VAROLANT"
+        android:textOn="VAROLANT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toEndOf="@+id/tbtnCOD"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2" />
+
+    <ToggleButton
+        android:id="@+id/tbtnPOKEMON"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="56dp"
+        android:text="ポケモン"
+        android:textOff="ポケモン"
+        android:textOn="ポケモン"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tbtnAPEX" />
+
+    <ToggleButton
+        android:id="@+id/tbtnCOD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:text="COD"
+        android:textOff="COD"
+        android:textOn="COD"
+        app:layout_constraintStart_toEndOf="@+id/tbtnAPEX"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2" />
+
+    <ToggleButton
+        android:id="@+id/tbtnDORAQUE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="56dp"
+        android:text="ドラクエ"
+        android:textOff="ドラクエ"
+        android:textOn="ドラクエ"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tbtnPOKEMON" />
+
+    <ToggleButton
+        android:id="@+id/tbtnFINAL"
+        android:layout_width="207dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="56dp"
+        android:text="ファイナルファンタジー"
+        android:textOff="ファイナルファンタジー"
+        android:textOn="ファイナルファンタジー"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.565"
+        app:layout_constraintStart_toEndOf="@+id/tbtnDORAQUE"
+        app:layout_constraintTop_toBottomOf="@+id/tbtnLOL" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="226dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="235dp"
+        android:text="随時追加予定"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButton10" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

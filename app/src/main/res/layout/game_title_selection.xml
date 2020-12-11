@@ -100,7 +100,7 @@
             app:srcCompat="@android:drawable/ic_lock_idle_alarm" />
 
         <ToggleButton
-            android:id="@+id/toggleButton2"
+            android:id="@+id/tbtnAPEX"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="62dp"
@@ -109,12 +109,12 @@
             android:text="APEX"
             android:textOff="APEX"
             android:textOn="APEX"
-            app:layout_constraintEnd_toStartOf="@+id/toggleButton7"
+            app:layout_constraintEnd_toStartOf="@+id/tbtnCOD"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
 
         <ToggleButton
-            android:id="@+id/toggleButton5"
+            android:id="@+id/tbtnLOL"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="28dp"
@@ -123,12 +123,12 @@
             android:text="LOL"
             android:textOff="LOL"
             android:textOn="LOL"
-            app:layout_constraintEnd_toStartOf="@+id/toggleButton9"
-            app:layout_constraintStart_toEndOf="@+id/toggleButton8"
-            app:layout_constraintTop_toBottomOf="@+id/toggleButton7" />
+            app:layout_constraintEnd_toStartOf="@+id/tbtnSMASH"
+            app:layout_constraintStart_toEndOf="@+id/tbtnPOKEMON"
+            app:layout_constraintTop_toBottomOf="@+id/tbtnCOD" />
 
         <ToggleButton
-            android:id="@+id/toggleButton9"
+            android:id="@+id/tbtnSMASH"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="9dp"
@@ -138,11 +138,11 @@
             android:textOff="スマブラ"
             android:textOn="スマブラ"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/toggleButton5"
-            app:layout_constraintTop_toBottomOf="@+id/toggleButton6" />
+            app:layout_constraintStart_toEndOf="@+id/tbtnLOL"
+            app:layout_constraintTop_toBottomOf="@+id/tbtnVAROLANT" />
 
         <ToggleButton
-            android:id="@+id/toggleButton6"
+            android:id="@+id/tbtnVAROLANT"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="9dp"
@@ -152,11 +152,11 @@
             android:textOff="VAROLANT"
             android:textOn="VAROLANT"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/toggleButton7"
+            app:layout_constraintStart_toEndOf="@+id/tbtnCOD"
             app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
 
         <ToggleButton
-            android:id="@+id/toggleButton7"
+            android:id="@+id/tbtnCOD"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="28dp"
@@ -165,12 +165,12 @@
             android:text="COD"
             android:textOff="COD"
             android:textOn="COD"
-            app:layout_constraintEnd_toStartOf="@+id/toggleButton6"
-            app:layout_constraintStart_toEndOf="@+id/toggleButton2"
+            app:layout_constraintEnd_toStartOf="@+id/tbtnVAROLANT"
+            app:layout_constraintStart_toEndOf="@+id/tbtnAPEX"
             app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
 
         <ToggleButton
-            android:id="@+id/toggleButton8"
+            android:id="@+id/tbtnPOKEMON"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="62dp"
@@ -179,10 +179,10 @@
             android:text="ポケモン"
             android:textOff="ポケモン"
             android:textOn="ポケモン"
-            app:layout_constraintEnd_toStartOf="@+id/toggleButton5"
+            app:layout_constraintEnd_toStartOf="@+id/tbtnLOL"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/toggleButton2" />
+            app:layout_constraintTop_toBottomOf="@+id/tbtnAPEX" />
 
         <ToggleButton
             android:id="@+id/toggleButton10"
@@ -194,12 +194,12 @@
             android:text="ドラクエ"
             android:textOff="ドラクエ"
             android:textOn="ドラクエ"
-            app:layout_constraintEnd_toStartOf="@+id/toggleButton11"
+            app:layout_constraintEnd_toStartOf="@+id/tbtnFINAL"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/toggleButton8" />
+            app:layout_constraintTop_toBottomOf="@+id/tbtnPOKEMON" />
 
         <ToggleButton
-            android:id="@+id/toggleButton11"
+            android:id="@+id/tbtnFINAL"
             android:layout_width="193dp"
             android:layout_height="44dp"
             android:layout_marginStart="28dp"
@@ -210,7 +210,7 @@
             android:textOn="ファイナルファンタジー"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/toggleButton10"
-            app:layout_constraintTop_toBottomOf="@+id/toggleButton5" />
+            app:layout_constraintTop_toBottomOf="@+id/tbtnLOL" />
 
         <TextView
             android:id="@+id/textView4"
