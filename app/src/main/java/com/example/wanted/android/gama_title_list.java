@@ -2,6 +2,7 @@ package com.example.wanted.android;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ToggleButton;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,14 +20,14 @@ public class gama_title_list extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        ToggleButton APEX = (ToggleButton)findViewById(R.id.tbtnAPEX);
-        ToggleButton COD = (ToggleButton)findViewById(R.id.tbtnCOD);
-        ToggleButton DORAQUE = (ToggleButton)findViewById(R.id.tbtnDORAQUE);
-        ToggleButton FINAL = (ToggleButton)findViewById(R.id.tbtnFINAL);
-        ToggleButton LOL = (ToggleButton)findViewById(R.id.tbtnLOL);
-        ToggleButton POKEMON = (ToggleButton)findViewById(R.id.tbtnPOKEMON);
-        ToggleButton SMASH = (ToggleButton)findViewById(R.id.tbtnSMASH);
-        ToggleButton VAROLAMT = (ToggleButton)findViewById(R.id.tbtnVAROLANT);
+        Button APEX = (Button)findViewById(R.id.btnAPEX);
+        Button COD = (Button)findViewById(R.id.btnCOD);
+        Button DORAQUE = (Button)findViewById(R.id.btnDORAQUE);
+        Button FINAL = (Button)findViewById(R.id.btnFINAL);
+        Button LOL = (Button)findViewById(R.id.btnLOL);
+        Button POKEMON = (Button)findViewById(R.id.btnPOKEMON);
+        Button SMASH = (Button)findViewById(R.id.btnSMASH);
+        Button VAROLAMT = (Button)findViewById(R.id.btnVAROLANT);
 
          APEX.setOnClickListener(new View.OnClickListener() {
              @Override

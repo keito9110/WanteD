@@ -36,8 +36,8 @@
 
     </RelativeLayout>
 
-    <ToggleButton
-        android:id="@+id/tbtnAPEX"
+    <Button
+        android:id="@+id/btnAPEX"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
@@ -48,8 +48,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout2" />
 
-    <ToggleButton
-        android:id="@+id/tbtnLOL"
+    <Button
+        android:id="@+id/btnLOL"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -57,11 +57,11 @@
         android:text="LOL"
         android:textOff="LOL"
         android:textOn="LOL"
-        app:layout_constraintStart_toEndOf="@+id/tbtnPOKEMON"
-        app:layout_constraintTop_toBottomOf="@+id/tbtnCOD" />
+        app:layout_constraintStart_toEndOf="@+id/btnPOKEMON"
+        app:layout_constraintTop_toBottomOf="@+id/btnCOD" />
 
-    <ToggleButton
-        android:id="@+id/tbtnSMASH"
+    <Button
+        android:id="@+id/btnSMASH"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
@@ -71,11 +71,11 @@
         android:textOn="スマブラ"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/tbtnLOL"
-        app:layout_constraintTop_toBottomOf="@+id/tbtnVAROLANT" />
+        app:layout_constraintStart_toEndOf="@+id/btnLOL"
+        app:layout_constraintTop_toBottomOf="@+id/btnVAROLANT" />
 
-    <ToggleButton
-        android:id="@+id/tbtnVAROLANT"
+    <Button
+        android:id="@+id/btnVAROLANT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -84,11 +84,11 @@
         android:textOn="VAROLANT"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.507"
-        app:layout_constraintStart_toEndOf="@+id/tbtnCOD"
+        app:layout_constraintStart_toEndOf="@+id/btnCOD"
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout2" />
 
-    <ToggleButton
-        android:id="@+id/tbtnPOKEMON"
+    <Button
+        android:id="@+id/btnPOKEMON"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
@@ -97,10 +97,10 @@
         android:textOff="ポケモン"
         android:textOn="ポケモン"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tbtnAPEX" />
+        app:layout_constraintTop_toBottomOf="@+id/btnAPEX" />
 
-    <ToggleButton
-        android:id="@+id/tbtnCOD"
+    <Button
+        android:id="@+id/btnCOD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -108,11 +108,11 @@
         android:text="COD"
         android:textOff="COD"
         android:textOn="COD"
-        app:layout_constraintStart_toEndOf="@+id/tbtnAPEX"
+        app:layout_constraintStart_toEndOf="@+id/btnAPEX"
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout2" />
 
-    <ToggleButton
-        android:id="@+id/tbtnDORAQUE"
+    <Button
+        android:id="@+id/btnDORAQUE"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
@@ -121,10 +121,10 @@
         android:textOff="ドラクエ"
         android:textOn="ドラクエ"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tbtnPOKEMON" />
+        app:layout_constraintTop_toBottomOf="@+id/btnPOKEMON" />
 
-    <ToggleButton
-        android:id="@+id/tbtnFINAL"
+    <Button
+        android:id="@+id/btnFINAL"
         android:layout_width="207dp"
         android:layout_height="43dp"
         android:layout_marginTop="56dp"
@@ -133,21 +133,19 @@
         android:textOn="ファイナルファンタジー"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.565"
-        app:layout_constraintStart_toEndOf="@+id/tbtnDORAQUE"
-        app:layout_constraintTop_toBottomOf="@+id/tbtnLOL" />
+        app:layout_constraintStart_toEndOf="@+id/btnDORAQUE"
+        app:layout_constraintTop_toBottomOf="@+id/btnLOL" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="226dp"
         android:layout_height="39dp"
-        android:layout_marginStart="118dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="235dp"
+        android:layout_marginTop="20dp"
         android:text="随時追加予定"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintHorizontal_bias="0.216"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toggleButton10" />
+        app:layout_constraintTop_toBottomOf="@+id/btnDORAQUE" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
