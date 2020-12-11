@@ -4,13 +4,14 @@ import android.app.Activity;
 import android.widget.TextView;
 
 import com.example.wanted.R;
+import com.example.wanted.async.Http;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.net.URL;
 
-public class JsonTest extends Http{
+public class JsonTest extends Http {
 
     public JsonTest(Activity activity) {
         super(activity);
