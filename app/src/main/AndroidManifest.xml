@@ -12,16 +12,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".android.profile_change"></activity>
+
+        <activity android:name=".android.CommSelection">
+        </activity>
+        <activity android:name=".android.Chat" >
+
+        </activity>
+        <activity android:name=".android.profile_change" />
         <activity android:name=".android.profile" />
         <activity android:name=".android.new_confirm" />
         <activity android:name=".android.registration" />
-        <activity android:name=".android.login" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <activity android:name=".android.login">
         </activity>
         <activity android:name=".android.new_registration" />
         <activity android:name=".android.home" />
@@ -30,8 +31,13 @@
         <activity android:name=".android.event_registration" />
         <activity android:name=".android.event_correction_complete" />
         <activity android:name=".api.MainActivity2" />
-        <activity android:name=".android.AuthToken"/>
+        <activity android:name=".android.AuthToken" />
         <activity android:name=".api.CommEnterRead" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 

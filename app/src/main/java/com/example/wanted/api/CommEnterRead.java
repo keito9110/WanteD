@@ -83,7 +83,7 @@ public class CommEnterRead extends AppCompatActivity {
         //Intent intent = new Intent(getApplication(), CommEnterRead.class);
         //startActivity(intent);
 
-        Cursor cursor = db.query(
+       /* Cursor cursor = db.query(
                 "user",
                 new String[] { "user_name", "user_id","user_mail","user_department","user_sex","user_icon","user_introduction","user_flag"},
                 null,
@@ -92,19 +92,28 @@ public class CommEnterRead extends AppCompatActivity {
                 null,
                 null
 
+        );*/
+        Cursor cursor1 = db.query(
+                "chat",
+                new String[]{"chat_id","community_id","user_id","chat_contents","send_time"},
+                null,
+                null,
+                null,
+                null,
+                null
         );
 
-        cursor.moveToFirst();
+        cursor1.moveToFirst();
 
 
 
-        for (int i = 0; i < cursor.getCount(); i++) {
-            String str = cursor.getString(0)+" : "+cursor.getString(1)+"点"+"\n"+cursor.getString(2)+cursor.getString(3)+cursor.getString(4)+cursor.getString(5)+cursor.getString(6)+cursor.getString(7);
-            cursor.moveToNext();
+        for (int i = 0; i < cursor1.getCount(); i++) {
+            String str = cursor1.getString(0)+" : "+cursor1.getString(1)+"点"+"\n"+cursor1.getString(2)+cursor1.getString(3)+cursor1.getString(4)+cursor1.getString(5);
+            cursor1.moveToNext();
             Test list = new Test(str);
             adapter.add(list);
         }
-        cursor.close();
+        cursor1.close();
     }
     /**
      * データベースにデータを保存

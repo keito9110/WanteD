@@ -22,7 +22,6 @@ public class CreateUserDB extends SQLiteOpenHelper {
 //  private static final String CULUM名 = 変数名;
     private static final String DATABASE_NAME = "User.db";
 
-    private static final String TABLE_EVENT_CHAT = "event_chat";
     private static final String TABLE_USER = "user";
 
     private static final String USER_NAME = "user_name";
@@ -35,33 +34,11 @@ public class CreateUserDB extends SQLiteOpenHelper {
     private static final String USER_ID = "user_id";
 
     private static final String TABLE_CHAT = "chat";
-    private static final String TABLE_NOTIFICATION = "notification";
-    private static final String TABLE_TITLE = "title";
-    private static final String TABLE_EVENT = "event_notification";
-    private static final String EVENT_ID = "event_id";
-    private static final String DATE = "expiration_date";
-    private static final String EVENT_CHAT_ID = "event_chat_id";
     private static final String CHAT_ID = "chat_id";
     private static final String CHAT_CONTENTS = "chat_contents";
     private static final String SEND_TIME = "send_time";
     private static final String COMM_ID = "community_id";
-    private static final String NOTIFICATION_ID = "notification_id";
-    private static final String TITLE_ID = "title_id";
-    private static final String TITLE_NAME = "title_name";
-    private static final String SENDER_ID = "sender_id";
 
-    private static final String SQL_CREATE_EVENT =
-            "CREATE TABLE " + TABLE_EVENT + " (" +
-                    EVENT_ID + " INTEGER PRIMARY KEY," +
-                    DATE + " TEXT )";
-
-    private static final String SQL_CREATE_EVENT_CHAT =
-            "CREATE TABLE " + TABLE_EVENT_CHAT + " (" +
-                    EVENT_CHAT_ID + " INTEGER PRIMARY KEY," +
-                    EVENT_ID + " TEXT, " +
-                    USER_ID + " TEXT, " +
-                    CHAT_CONTENTS + "TEXT, " +
-                    SEND_TIME + " TEXT)";
 
     private static final String SQL_CREATE_CHAT =
             "CREATE TABLE " + TABLE_CHAT + " (" +
@@ -70,19 +47,6 @@ public class CreateUserDB extends SQLiteOpenHelper {
                     USER_ID + " TEXT, " +
                     CHAT_CONTENTS + "TEXT, " +
                     SEND_TIME + " TEXT)";
-
-    private static final String SQL_CREATE_NOTIFICATION =
-            "CREATE TABLE " + TABLE_NOTIFICATION + " (" +
-                    NOTIFICATION_ID + " INTEGER PRIMARY KEY," +
-                    SENDER_ID + " TEXT, " +
-                    COMM_ID + " TEXT, " +
-                    DATE + "TEXT, " +
-                    SEND_TIME + " TEXT)";
-
-    private static final String SQL_CREATE_TITLE =
-            "CREATE TABLE " + TABLE_TITLE + " (" +
-                    TITLE_ID + " INTEGER PRIMARY KEY," +
-                    TITLE_NAME +  "TEXT)";
 
    private static final String SQL_CREATE_USER =
            "CREATE TABLE " + TABLE_USER+ " (" +
@@ -100,6 +64,9 @@ public class CreateUserDB extends SQLiteOpenHelper {
 
     private static final String SQL_DELETE_ENTRIES =
             "DROP TABLE IF EXISTS " + TABLE_USER;
+    private static final String SQ_DELETE_CHAT =
+            "DROP TABLE IF EXISTS " + TABLE_CHAT;
+
 
 
 
@@ -113,18 +80,11 @@ public class CreateUserDB extends SQLiteOpenHelper {
                 SQL_CREATE_USER
         );
         db.execSQL(
-                SQL_CREATE_TITLE
+                SQL_CREATE_CHAT
         );
-        db.execSQL(
-                SQL_CREATE_NOTIFICATION
-        );
-        db.execSQL(
-                SQL_CREATE_EVENT
-        );
-        db.execSQL(
-                SQL_CREATE_EVENT_CHAT
-        );
-        saveData(db,"m","k");
+        saveData(db,"こんにちは",nowDate());
+        saveData(db,"よろしくお願いします。",nowDate());
+
 
     }
 
@@ -143,6 +103,9 @@ public class CreateUserDB extends SQLiteOpenHelper {
         db.execSQL(
                 SQL_DELETE_ENTRIES
         );
+        db.execSQL(
+                SQ_DELETE_CHAT
+        );
         onCreate(db);
     }
 
@@ -159,13 +122,13 @@ public class CreateUserDB extends SQLiteOpenHelper {
     public void saveData(SQLiteDatabase db, String title, String score) {
         ContentValues values = new ContentValues();
 
-        values.put("user_name", title);
-        values.put("user_mail", score);
+        values.put("chat_contents", title);
+        values.put("send_time", score);
 
        // values.put("title", title);
        // values.put("score", score);
        // values.put("date", date);
 
-        db.insert("user", null, values);
+        db.insert("chat", null, values);
     }
 }
