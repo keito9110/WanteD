@@ -53,6 +53,7 @@ public class entry_comfirm_main extends AppCompatActivity {
                 String student = etxtStudent_number.getText().toString();
                 String pass = etxtPassword.getText().toString();
                 String Deap = etxtDepartment.getText().toString();
+
                 //性別の受け渡し
                 int id = rg.getCheckedRadioButtonId();
                 RadioButton radioButton = (RadioButton) findViewById(id);

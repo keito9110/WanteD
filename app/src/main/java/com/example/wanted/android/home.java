@@ -45,34 +45,35 @@ public class home extends AppCompatActivity {
         ib1.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                //Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-                //startActivity(intent);
+                Intent intent = new Intent(home.this, home.class);
+                startActivity(intent);
             }
         });
 
         ib2.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-               // Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-                // startActivity(intent);
+                Intent intent = new Intent(home.this, profile.class);
+                startActivity(intent);
             }
         });
 
         ib3.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                //Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-                //startActivity(intent);
+                Intent intent = new Intent(home.this, community.class);
+                startActivity(intent);
             }
         });
 
         ib4.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-               // Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-               // startActivity(intent);
+                Intent intent = new Intent(home.this, gama_title_list.class);
+                startActivity(intent);
             }
         });
+
 
     }
 }
