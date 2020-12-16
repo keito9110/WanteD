@@ -1,8 +1,10 @@
 package com.example.wanted.android;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ToggleButton;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -29,6 +31,11 @@ public class gama_title_list extends AppCompatActivity {
         Button SMASH = (Button)findViewById(R.id.btnSMASH);
         Button VAROLAMT = (Button)findViewById(R.id.btnVAROLANT);
 
+
+        ImageButton ib1 = (ImageButton)findViewById(R.id.imageButton1);
+        ImageButton ib2 = (ImageButton)findViewById(R.id.imageButton2);
+        ImageButton ib3 = (ImageButton)findViewById(R.id.imageButton3);
+        ImageButton ib4 = (ImageButton)findViewById(R.id.imageButton4);
          APEX.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View v) {
@@ -82,6 +89,38 @@ public class gama_title_list extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+            }
+        });
+
+        ib1.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+               // Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+               // startActivity(intent);
+            }
+        });
+
+        ib2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+               // Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                //startActivity(intent);
+            }
+        });
+
+        ib3.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                //Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                //startActivity(intent);
+            }
+        });
+
+        ib4.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                //Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                //startActivity(intent);
             }
         });
 
